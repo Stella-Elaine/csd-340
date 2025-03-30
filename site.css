@@ -3,9 +3,7 @@ module 3.2  css bit */
 
 
 
-
-
-#container {
+body {
 margin-top: 50px;
  margin-left: 100px;
 margin-right: 100px;
@@ -21,16 +19,16 @@ border: 1px solid #D6A800;
 
 
 a {
-color: #4CAF50; 
+color: #b7138e; 
 text-decoration: none; 
 }
 
 
 a:hover {
-color: #8BC34A; 
+color: #c56d1f; 
 }
 
 
 a:visited {
- color: #388E3C; 
+ color: #0e6b93; 
 }
