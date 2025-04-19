@@ -1,0 +1,50 @@
+.card {
+    box-shadow: 2px 2px 12px #aaa;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-content {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  #movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  #movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+  }
+  
+  #movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: left;
+  }
+  
+  #container {
+    margin: 2% 5% 100px 5%;
+  }
+  
