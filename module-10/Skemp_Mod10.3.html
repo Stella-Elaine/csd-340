@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Stella Kemp" />
+  <meta name="description" content="CSD 340 Development with HTML and CSS Assignment 10.3" />
+  <meta name="keywords" content="HTML, CSS, Assignment 10.3, Web Development" />
+  <title>CSD 340 Development with HTML and CSS</title>
+  <link rel="stylesheet" href="Kemp_mod2_2.css" />
+  <link rel="stylesheet" href="module10.css" />
+
+  <script>
+    function displayImage(imageFile) {
+      var firstImage = document.getElementById("mainImage");
+      var newNode = document.createElement("img");
+      newNode.id = "mainImage";
+      newNode.src = imageFile;
+      newNode.alt = "First image";
+      newNode.className = "mainImage";
+      newNode.style.width = "300px";
+      newNode.style.height = "200px";
+      firstImage.parentNode.replaceChild(newNode, firstImage);
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Assignment 10.3 JavaScript Part 2</h1>
+  </header>
+
+  <main>
+    <div>
+      <a href="#"
+        onmouseover="document.tree.src='photos/IMG_1326.jpg';"
+        onmouseout="document.tree.src='photos/IMG_1325.jpg';">
+        Hover over me
+      </a>
+    </div>
+
+    <img border="0" name="tree" src="photos/IMG_1325.jpg" alt="Tree Image" />
+
+    <div
+      onmouseover="this.style.color='blue';"
+      onmouseout="this.style.color='green';"
+      style="color: black;">
+      Move mouse over image to change colors of image
+    </div>
+  </main>
+</body>
+</html>
