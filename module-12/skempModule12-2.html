@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="sKempModule3.3.css">
+ 
+    <script>
+   
+        const books = [ "Human Acts Han Kang","Between Shadows AcanthaMD", "The Fallout EveryThursday","All The Wrong Things Julie Soto","The Auction Julie Soto","Alchemised SenLinYu", "Careless People Sarah Wynn-Williams", "The Sisterhood the secret history of women in the cia Liza Mundy", "Platonic Marisa Franco", "A World After Gaze Pankaj Mishra" ];
+
+        function sortAscending() {
+            const sortedBooks = [...books].sort();
+            displayBooks(sortedBooks);
+        }
+
+        function sortDescending() {
+            const sortedBooks = [...books].sort().reverse();
+            displayBooks(sortedBooks);
+        }
+
+        function displayBooks(arr) {
+            const list = document.getElementById("bookList");
+            list.innerHTML = ""; 
+            arr.forEach(book => {
+                const li = document.createElement("li");
+                li.textContent = book;
+                list.appendChild(li);
+            });
+        }
+
+        window.onload = () => {
+            displayBooks(books);
+        };
+    </script>
+</head>
+
+<body>
+    <button onclick="sortAscending()">Top to Bottom</button>
+    <button onclick="sortDescending()">Bottom to Top</button>
+
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+        <div class="side-by-side">
+            <div class="left-div">
+                <h3>Top 10 Favorite Books</h3>
+                <ol id="bookList"></ol>
+            </div>
+        </div>
+
+            <a href="index.html">Back to Landing Page</a>
+        </div>
+    </div>
+</body>
+</html>
+
